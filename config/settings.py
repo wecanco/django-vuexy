@@ -15,7 +15,7 @@ from pathlib import Path
 from django.utils.translation import gettext_lazy as _
 from dotenv import load_dotenv
 
-from template import TEMPLATE_CONFIG, THEME_LAYOUT_DIR, THEME_VARIABLES
+from .template import TEMPLATE_CONFIG, THEME_LAYOUT_DIR, THEME_VARIABLES
 
 load_dotenv()  # take environment variables from .env.
 
