@@ -241,7 +241,7 @@ SESSION_COOKIE_AGE = 3600
 # CSRF_TRUSTED_ORIGINS = [
 #     "http://localhost:5050",
 # ]
-CSRF_TRUSTED_ORIGINS = str(os.environ.get('CSRF_TRUSTED_ORIGINS', '*')).split(',')
+CSRF_TRUSTED_ORIGINS = str(os.environ.get('CSRF_TRUSTED_ORIGINS', 'http://*,https://*')).split(',')
 
 # Your stuff...
 # ------------------------------------------------------------------------------
